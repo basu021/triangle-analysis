@@ -1,0 +1,203 @@
+body {
+    background: #1e1e1e url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAG0lEQVQYV2P8//+/FCMj4zMGJMCIzIGxKRQEAJgPBAbJqUVTAAAAAElFTkSuQmCC) repeat;
+    font-weight: 500;
+    color: #fff;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.inputs {
+    border: 1px solid #00bebe;
+    border-top: 5px solid #00bebe;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0, 190, 190, 0.1);
+    padding: 10px 0 40px 0;
+    border-radius: 5px;
+
+}
+
+input {
+    width: 150px;
+    height: 80px;
+    font-size: 1.9em;
+    text-align: center;
+    border: 1px solid #00bebe;
+    background: transparent;
+    color: #00bebe;
+    -webkit-animation: entrance 400ms 800ms linear backwards 1;
+    animation: entrance 400ms 800ms linear backwards 1;
+}
+input:focus {
+    outline: none;
+}
+
+#mid-msg {
+    font-size: 2.5em;
+    color: #09cc44;
+    text-shadow: 0 0 20px #09cc44;
+}
+h2 {
+    text-align: center;
+    color:  rgba(0, 190, 190, 1);
+    text-shadow: 0 0 25px rgba(0, 190, 190, 1);
+    font-size: 30px;
+    -webkit-animation: entrance 400ms 800ms linear backwards 1;
+    animation: entrance 400ms 800ms linear backwards 1;
+}
+h1 {
+    background-color: #f5d546;
+    text-align: center;
+    padding: 0 5px 3px 5px;
+    color: #111111;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin: 20px 0 10px;
+    border: 1px #f5d546 solid;
+    border-radius: 5px;
+  }
+  
+  h1, p, #wm .title::before {
+    font-weight: 500;
+  }
+  
+  p, #wm .title::before {
+    opacity: 0.3;
+    margin: 0 0 10px 0;
+    letter-spacing: 1px;
+  }
+  
+  a {
+    color: #f5d546;
+  }
+  a:hover {
+    background: #f5d546;
+    color: #111;
+    text-decoration: none;
+  }
+  
+  #wm {
+    width: 500px;
+    /*margin: auto;*/
+    margin-top: 40px;
+    position: relative;
+    border-left: 5px solid #f5d546;
+    padding-left: 40px;
+  }
+  #wm .msg-box {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    background: linear-gradient(0deg, rgba(245, 213, 70, 0.1) 0%, rgba(17, 17, 17, 0) 100%);
+    border: 1px #f5d546 solid;
+    border-radius: 5px;
+    -webkit-animation: entrance 400ms 800ms linear backwards 1;
+            animation: entrance 400ms 800ms linear backwards 1;
+  }
+  #wm .msg-box #mid-msg {
+      
+    margin: auto;
+  }
+  #wm .description {
+    -webkit-animation: entrance 400ms 1000ms linear backwards 1;
+            animation: entrance 400ms 1000ms linear backwards 1;
+  }
+  
+  
+  @-webkit-keyframes entrance {
+    to, 20%, 40%, 60%, 80% {
+      opacity: 1;
+    }
+    from, 10%, 30%, 50%, 70%, 90% {
+      opacity: 0;
+    }
+  }
+
+  
+.led-no {
+	border-radius: 50%;
+	background-color: #220000;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	cursor: pointer;
+	margin: 20px auto;
+	border: 3px solid #222;
+}
+
+
+.led-no:hover, .led-no.active {
+	background-color: #AA0000;
+	box-shadow: 0px 0px 10px 5px rgba(255, 0, 0, 0.4);
+	border: 3px solid rgba(120, 0, 0, 1);
+}
+
+.led-no .n-glow {
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	position: absolute;
+	background-color: rgba(255,255,255,0.5);
+	top: 7px;
+	left: 7px;
+	box-shadow: 3px 4px 7px 9px rgba(180, 0, 0, 0.6);
+}
+
+.led-no:hover .n-glow, .led-no.active .n-glow {
+	background-color: rgba(255,255,255,1);
+	box-shadow: 4px 4px 6px 7px rgba(255, 0, 0, 1);
+}
+
+.led-yes {
+  border-radius: 50%;
+	background-color: #002200;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	cursor: pointer;
+	margin: 20px auto;
+	border: 3px solid #222;
+}
+
+.led-yes:hover, .led-yes.active {
+	background-color: #00AA00;
+	box-shadow: 0px 0px 10px 5px rgba(0, 255, 0, 0.4);
+	border: 3px solid rgba(0, 120, 0, 1);
+}
+
+.led-yes .y-glow {
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.733);
+	top: 7px;
+	left: 7px;
+	box-shadow: 3px 4px 7px 9px rgba(0, 180, 0, 0.6);
+}
+
+/* .led-yes:hover .y-glow, .led-yes.active .y-glow {
+	background-color: rgba(255,255,255,1);
+	box-shadow: 4px 4px 6px 7px rgba(0, 255, 0, 1);
+} */
+
+.types h3,h4 {
+  visibility: hidden;
+}
+.secondary {
+  width: 100%;
+}
+.type-names, .tf{
+  display: flex;
+  justify-content: space-evenly;
+}
+.t1 {
+  width: 120px;
+}
+.t1 p {
+  text-align: center;
+}

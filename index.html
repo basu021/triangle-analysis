@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Triangle Analysis</title>
+</head>
+<body>
+<div class="container">
+    <div class="primary">
+        <div class="input-iteams">
+            <h2>Input the sides</h2>
+            <div class="inputs">
+                <input type="text" name="" id="side1">
+                <input type="text" name="" id="side2">
+                <input type="text" name="" id="side3" onchange="valid()">
+            </div>
+        </div>
+        <div class="warning-msg" id="wm">
+                <div class="msg-box">
+                  <div id="mid-msg"></div>
+                </div>
+                <div class="description">
+                  <h1>Output</h1>
+                  <p>Description</p>
+                </div>
+        </div>
+    </div>
+    <div class="secondary">
+        <div class="types">
+            <h3>Type of triangle</h3>
+            <h4>Based on sides</h4>
+            <div class="type-names"> 
+                <div class="t1">
+                    <p>Equilateral</p>
+                    <div class="tf">
+                        <div class="led-yes" id="equi">
+                            <div class="y-glow"></div>
+                        </div>
+                        <div class="led-no">
+                            <div class="n-glow"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="t1">
+                    <p>Isosceles</p>
+                    <div class="tf">
+                        <div class="led-yes" id="isosceles">
+                            <div class="y-glow"></div>
+                        </div>
+                        <div class="led-no">
+                            <div class="n-glow"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="t1">
+                    <p>Scalene</p>
+                    <div class="tf">
+                        <div class="led-yes" id="scalene"> 
+                            <div class="y-glow"></div>
+                        </div>
+                        <div class="led-no">
+                            <div class="n-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="/js/script.js"></script>
+</body>
+</html> 
